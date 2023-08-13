@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  * main - printing
- * Description : this is just a simple function!
+ * Description: this is just a simple function!
  *
- * Return : it returns always 0
+ * Return: always 0
  */
 int main(void)
 {
