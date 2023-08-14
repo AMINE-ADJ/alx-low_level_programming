@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - a simple function
  * Description: just a simple function that prints letters with putchar.
@@ -20,7 +20,7 @@ int main(void)
 			{
 				for (w = '0'; w <= '9'; w++)
 				{
-					if (i == z && w > j || i < z)
+					if ((i == z && w > j) || i < z)
 					{
 						putchar(i);
 						putchar(j);
