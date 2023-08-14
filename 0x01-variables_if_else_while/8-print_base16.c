@@ -10,12 +10,13 @@
 int main(void)
 {
 	int i;
-	char *a = "0123456789abcdef\n";
+	char *a = "0123456789abcdef";
 
-	for (i = 0; i <= 17; i++)
+	for (i = 0; i < 17; i++)
 	{
 		putchar(a[i]);
 	}
+	putchar(10);
 
 	return (0);
 }
