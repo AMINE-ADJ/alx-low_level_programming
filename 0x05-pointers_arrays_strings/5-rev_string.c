@@ -1,13 +1,12 @@
 #include "main.h"
 #include<string.h>
-#include<stdio.h>
 
 /**
  * print_rev - a simple one
  * @s: a pointer that holds the address of the first element of a string.
  *
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i, len;
 
@@ -19,6 +18,5 @@ void print_rev(char *s)
 		i++;
 		len--;
 	}
-	_putchar(s[len]);
 	_putchar('\n');
 }
