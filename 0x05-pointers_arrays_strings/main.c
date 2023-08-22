@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - check the code for
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char *str;
-str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi    nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida    tat non proident, sunt in culpa qui officia deserunt mollit anim id est labo    rum.";
-    puts_half(str);
+    int array[5];
+
+    array[0] = 98;
+    array[1] = 402;
+    array[2] = -198;
+    array[3] = 298;
+    array[4] = -1024;
+    print_array(array, 5);
     return (0);
 }
