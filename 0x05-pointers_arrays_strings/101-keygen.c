@@ -4,8 +4,10 @@
 
 /**
  * main - just to crack a file
+ *
+ * Return: 0
  */
-void main(void)
+int main(void)
 {
 
 	int sum;
@@ -20,6 +22,6 @@ void main(void)
 	}
 
 	putchar(2772 - sum);
-
+	return (0);
 
 }
