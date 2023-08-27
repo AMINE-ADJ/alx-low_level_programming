@@ -8,7 +8,8 @@
 char *cap_string(char *s)
 {
 	char sep[] = {32, 9, '\n', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}'};
-	int i, first;
+	int i, first = 0;
+	int len = 1;
 
 	if (*s)
 	{
@@ -22,7 +23,6 @@ char *cap_string(char *s)
 	while (*s)
 	{
 		i = 0;
-		first = 0;
 		while (i < 13)
 		{
 			if (sep[i] == *(s - 1))
@@ -34,8 +34,13 @@ char *cap_string(char *s)
 			*s -= 32;
 			first = 0;
 		}
+		else
+		{
+			first = 0;
+		}
 		s++;
+		len++;
 	}
 
-	return (s);
+	return (s - len);
 }
