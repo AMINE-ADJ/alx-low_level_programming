@@ -1,13 +1,12 @@
 #include "main.h"
 #include<stdio.h>
-
 int main(void)
 {
-	char s[3] = "ho";
-	char a[6] = "oksat";
-	char *dest = _strncpy(s, a, 2);
+    char s1[] = "Hello";
+    char s2[] = "World!";
 
-	printf("%s", dest);
-
-	return (0);
+    printf("%d\n", _strcmp(s1, s2));
+    printf("%d\n", _strcmp(s2, s1));
+    printf("%d\n", _strcmp(s1, s1));
+    return (0);
 }
