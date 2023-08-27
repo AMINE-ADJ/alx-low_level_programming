@@ -5,7 +5,7 @@ int main(void)
 {
 	char s[3] = "ho";
 	char a[6] = "oksat";
-	char *dest = _strncat(s, a, 2);
+	char *dest = _strncpy(s, a, 2);
 
 	printf("%s", dest);
 
