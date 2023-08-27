@@ -30,7 +30,10 @@ char *cap_string(char *s)
 			i++;
 		}
 		if (first && *s >= 'a' && *s <= 'z')
+		{
 			*s -= 32;
+			first = 0;
+		}
 		s++;
 	}
 
