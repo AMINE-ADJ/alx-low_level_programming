@@ -4,8 +4,8 @@
 int main(void)
 {
 	char s[3] = "ho";
-	char a[6] = "ok";
-	char *dest = _strcat(s, a);
+	char a[6] = "oksat";
+	char *dest = _strncat(s, a, 2);
 
 	printf("%s", dest);
 
