@@ -1,5 +1,4 @@
 #include<string.h>
-#include<stdio.h>
 
 /**
  * _strcat - strcat manually
@@ -18,6 +17,5 @@ char *_strcat(char *dest, char *src)
 		dest[enddst + i] = src[i];
 	}
 	dest[enddst + i] = '\0';
-	printf("%s", dest);
 	return (dest);
 }
